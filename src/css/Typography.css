@@ -1,0 +1,143 @@
+.mdc-typography--headline1,
+.mdc-typography--headline2 {
+	font-family: 'Jost', sans-serif;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 600;
+	text-decoration: inherit;
+	text-transform: inherit;
+}
+.mdc-typography--headline3,
+.mdc-typography--headline4 {
+	font-family: 'Jost', sans-serif;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 700;
+	text-decoration: inherit;
+	text-transform: inherit;
+}
+
+.mdc-typography--headline5,
+.mdc-typography--headline6 {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	line-height: 2rem;
+	text-decoration: inherit;
+	text-transform: inherit;
+}
+
+.mdc-typography--subtitle1,
+.mdc-typography--subtitle2 {
+	font-family: 'Jost', sans-serif;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: inherit;
+	text-transform: inherit;
+}
+
+.mdc-typography--body2,
+.mdc-typography--caption {
+	font-family: 'Open Sans', sans-serif;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.25rem;
+	font-weight: 400;
+	text-decoration: inherit;
+	text-transform: inherit;
+}
+
+.mdc-typography--button,
+.mdc-typography--overline {
+	font-family: 'Jost', sans-serif;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none;
+}
+
+.mdc-typography--headline1 {
+	font-size: 6rem;
+	line-height: 6rem;
+	letter-spacing: -0.015625em;
+}
+
+.mdc-typography--headline2 {
+	font-size: 3.75rem;
+	line-height: 4.375rem;
+	letter-spacing: -0.0083333333em;
+}
+
+.mdc-typography--headline3 {
+	font-size: 3.125rem;
+	line-height: 3.75rem;
+	letter-spacing: normal;
+}
+
+.mdc-typography--headline4 {
+	font-size: 2.875rem;
+	line-height: 3.5rem;
+	letter-spacing: 0.0073529412em;
+}
+
+.mdc-typography--headline5 {
+	font-family: 'Jost', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: normal;
+}
+
+.mdc-typography--headline6 {
+	font-family: 'Jost', sans-serif;
+	font-size: 1.25rem;
+	font-weight: 500;
+	letter-spacing: 0.0125em;
+}
+
+.mdc-typography--subtitle1 {
+	font-size: 1rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	letter-spacing: 0.025em;
+}
+
+.mdc-typography--subtitle2 {
+	font-size: 0.875rem;
+	line-height: 1.375rem;
+	font-weight: 500;
+	letter-spacing: 0.0071428571em;
+}
+
+.mdc-typography--body1 {
+	font-family: 'Open Sans', sans-serif;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 0.03125em;
+	text-decoration: inherit;
+	text-transform: inherit;
+}
+
+.mdc-typography--body2 {
+	font-size: 0.875rem;
+	letter-spacing: 0.0178571429em;
+}
+
+.mdc-typography--button {
+	font-size: 0.875rem;
+	line-height: 2.25rem;
+	letter-spacing: 0.0892857143em;
+	font-weight: 600;
+}
+
+.mdc-typography--caption {
+	font-size: 0.75rem;
+	letter-spacing: 0.0333333333em;
+}
+
+.mdc-typography--overline {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	letter-spacing: -0.01666666667em;
+	font-weight: 700;
+}
