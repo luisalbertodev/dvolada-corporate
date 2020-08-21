@@ -1,6 +1,6 @@
 .mdc-typography--headline1,
 .mdc-typography--headline2 {
-	font-family: 'Jost', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 600;
@@ -9,7 +9,7 @@
 }
 .mdc-typography--headline3,
 .mdc-typography--headline4 {
-	font-family: 'Jost', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 700;
@@ -28,7 +28,7 @@
 
 .mdc-typography--subtitle1,
 .mdc-typography--subtitle2 {
-	font-family: 'Jost', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	text-decoration: inherit;
@@ -48,7 +48,7 @@
 
 .mdc-typography--button,
 .mdc-typography--overline {
-	font-family: 'Jost', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	text-decoration: none;
@@ -79,14 +79,14 @@
 }
 
 .mdc-typography--headline5 {
-	font-family: 'Jost', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	font-size: 1.5rem;
 	font-weight: 600;
 	letter-spacing: normal;
 }
 
 .mdc-typography--headline6 {
-	font-family: 'Jost', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	font-size: 1.25rem;
 	font-weight: 500;
 	letter-spacing: 0.0125em;
@@ -95,7 +95,7 @@
 .mdc-typography--subtitle1 {
 	font-size: 1rem;
 	line-height: 1.75rem;
-	font-weight: 600;
+	font-weight: 500;
 	letter-spacing: 0.025em;
 }
 

@@ -1,3 +1,164 @@
 body {
 	font-family: 'Jost', sans-serif;
 }
+
+.img-fluid {
+	width: 100%;
+	height: auto;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.p-none {
+	padding: 0px !important;
+}
+
+.m-none {
+	margin: 0px !important;
+}
+
+.c-gray {
+	color: #5a5a5a;
+}
+
+.c-black {
+	color: #000;
+}
+
+.c-white {
+	color: #fff;
+}
+
+.c-primary {
+	color: #ffa500;
+}
+
+.main-height {
+	background-image: url(../images/home-page/h1_hero.jpg);
+	min-height: 600px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.link-primary {
+	text-decoration: none;
+	padding: 0px 1em;
+	color: #212121;
+}
+
+.item-footer--list {
+	color: #212121;
+}
+
+.item-footer--list:hover {
+	color: #d18800;
+	text-decoration: underline;
+	animation: all 0.5s;
+}
+
+span.ant-tag.wrapper-tag--places {
+	cursor: pointer;
+	font-size: 16px;
+	padding: 6px 18px;
+	border: 2px solid #d9d9d9;
+}
+
+span.ant-tag.wrapper-tag--places:hover,
+span.ant-tag.wrapper-tag--places:active,
+span.ant-tag.wrapper-tag--places:focus {
+	background: #e29300;
+	border: 2px solid #ffb325;
+	color: white;
+}
+
+.content-available-place {
+	background: #fafaf8;
+	padding: 2em;
+	border-radius: 1em;
+	-webkit-box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.2);
+}
+
+.bg-content-primary {
+	background: rgb(253, 72, 29);
+	background: -moz-linear-gradient(
+		159deg,
+		rgba(253, 72, 29, 0.6741071428571428) 0%,
+		rgba(252, 176, 69, 0.8029586834733894) 100%
+	);
+	background: -webkit-linear-gradient(
+		159deg,
+		rgba(253, 72, 29, 0.6741071428571428) 0%,
+		rgba(252, 176, 69, 0.8029586834733894) 100%
+	);
+	background: linear-gradient(
+		159deg,
+		rgba(253, 72, 29, 0.6741071428571428) 0%,
+		rgba(252, 176, 69, 0.8029586834733894) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd481d",endColorstr="#fcb045",GradientType=1);
+}
+
+.color-primary {
+	background: #ff6f00 !important;
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#ff6f00),
+		color-stop(50%, #ffa000),
+		to(#ff8f00)
+	) !important;
+	background: linear-gradient(90deg, #ff6f00, #ffa000 50%, #ff8f00) !important;
+	border-color: #ff8f00 !important;
+}
+.btn-primary {
+	border: 0;
+	color: white;
+	padding: 1.2em 3em;
+	border-radius: 32px;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.4s ease 0s;
+}
+
+/* .btn-primary:active, */
+/* .btn-primary:focus  */
+.btn-primary:hover {
+	background: #434343;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+	transition: all 0.4s ease 0s;
+}
+
+.wrapper-benefits-card {
+	margin: 0px !important;
+	padding: 1em 0.4em;
+	/* transition: all 0.4s ease 0s; */
+	border-radius: 32px;
+}
+
+.wrapper-benefits-card:hover,
+.wrapper-benefits-card:active,
+.wrapper-benefits-card:focus {
+	border: 2px solid #ddd;
+	/* transition: all 0.4s ease 0s; */
+}
+
+.wrapper-carousel-categories {
+	display: grid !important;
+}
+
+.wrapper-autocomplete {
+	padding: 0 0.5em !important;
+}
