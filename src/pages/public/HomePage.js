@@ -7,6 +7,7 @@ import { Logo } from '../../components/Logo';
 import IOS_ICON from '../../images/svg/apple-store_app-store-es.svg';
 import ANDROID_ICON from '../../images/svg/play-store_play-store-es.png';
 import DELIVERY_MAN from '../../images/home-page/delivery_man.png';
+import MOCKUP_MOBILE from '../../images/mockup-mobile.png';
 import axios from 'axios';
 
 const style = {
@@ -275,11 +276,7 @@ export class HomePage extends Component {
 										</Row>
 									</Col>
 									<Col md={6}>
-										<img
-											src="https://images.rappi.com/web/cities/app_3d@3x.png"
-											alt="bg-phone"
-											className="img-fluid"
-										/>
+										<img src={MOCKUP_MOBILE} alt="bg-phone" className="img-fluid" />
 									</Col>
 								</Row>
 							</Col>
