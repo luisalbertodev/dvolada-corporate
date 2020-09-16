@@ -467,15 +467,17 @@ const Footer = (props) => {
 								<Row end="md">
 									<Col xs={12}>
 										<a
-											href="https://dvolada.com.mx/aviso-de-privacidad"
+											href="https://dvolada.firebaseapp.com/aviso-de-privacidad"
 											className="item-footer--list"
 										>
 											Politicas de privacidad
 										</a>
 									</Col>
-									{/* <Col xs={6}>
-								<a href="#">Términos y condiciones</a>
-							</Col> */}
+									<Col xs={6}>
+										<a href="https://dvolada.firebaseapp.com/terminos-y-condiciones">
+											Términos y condiciones
+										</a>
+									</Col>
 								</Row>
 							</Col>
 						</Row>
