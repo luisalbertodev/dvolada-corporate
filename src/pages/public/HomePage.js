@@ -66,9 +66,12 @@ const configCategories = {
 };
 
 export class HomePage extends Component {
-	state = {
-		categories: [],
-	};
+	constructor(props) {
+		super(props);
+		this.state = {
+			categories: [],
+		};
+	}
 
 	handleNext = () => {
 		this.slider.next();
@@ -465,7 +468,7 @@ const Footer = (props) => {
 							</Col>
 							<Col md={6}>
 								<Row end="md">
-									<Col xs={12}>
+									<Col md={6}>
 										<a
 											href="https://dvolada.firebaseapp.com/aviso-de-privacidad"
 											className="item-footer--list"
@@ -473,7 +476,7 @@ const Footer = (props) => {
 											Politicas de privacidad
 										</a>
 									</Col>
-									<Col xs={6}>
+									<Col md={6}>
 										<a href="https://dvolada.firebaseapp.com/terminos-y-condiciones">
 											Términos y condiciones
 										</a>
