@@ -66,8 +66,8 @@ const configCategories = {
 };
 
 export class HomePage extends Component {
-	constructor(props) {
-		super(props);
+	constructor() {
+		super();
 		this.state = {
 			categories: [],
 		};
@@ -369,16 +369,17 @@ const Section1 = (props) => {
 									</Col>
 									<Col xs={10} md={12}>
 										<Row center="xs" start="md">
-											<button
+											<a
 												type="button"
 												className="btn-primary color-primary"
-												onClick={props.onClick}
+												href={'https://www.facebook.com/DvoladaPueblaOficial'}
+												target="_blank"
 											>
-												Ordernar Ahora
-											</button>
-											<p style={{ padding: 16, margin: 0 }} className="mdc-typography--subtitle1">
+												Conocer más
+											</a>
+											{/* <p style={{ padding: 16, margin: 0 }} className="mdc-typography--subtitle1">
 												Entregas desde 30 min
-											</p>
+											</p> */}
 										</Row>
 									</Col>
 									{/* 
@@ -471,13 +472,17 @@ const Footer = (props) => {
 									<Col md={6}>
 										<a
 											href="https://dvolada.firebaseapp.com/aviso-de-privacidad"
+											target="_blank"
 											className="item-footer--list"
 										>
 											Politicas de privacidad
 										</a>
 									</Col>
 									<Col md={6}>
-										<a href="https://dvolada.firebaseapp.com/terminos-y-condiciones">
+										<a
+											href="https://dvolada.firebaseapp.com/terminos-y-condiciones"
+											target="_blank"
+										>
 											Términos y condiciones
 										</a>
 									</Col>
