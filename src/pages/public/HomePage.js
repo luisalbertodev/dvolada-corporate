@@ -372,7 +372,7 @@ const Section1 = (props) => {
 											<a
 												type="button"
 												className="btn-primary color-primary"
-												href={'https://www.facebook.com/DvoladaPueblaOficial'}
+												href={'https://dvolada.lat/'}
 												target="_blank"
 											>
 												Conocer más
