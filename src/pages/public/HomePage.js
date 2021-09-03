@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import { Input, Avatar, Button, Carousel, Tag } from 'antd';
+import { Avatar, Button, Carousel, Tag } from 'antd';
 import { PRIMARY_COLOR } from '../../data/ConstansStyles';
 import { BASE_URL } from '../../data/Constans';
 import { Logo } from '../../components/Logo';
@@ -96,7 +96,7 @@ export class HomePage extends Component {
 
 	componentDidMount() {
 		axios.get(`${BASE_URL}/category/all/all_sub_category`).then((response) => {
-			if (response.status == 200) {
+			if (response.status === 200) {
 				this.setState({ categories: response.data.result });
 			}
 		});
@@ -104,16 +104,16 @@ export class HomePage extends Component {
 
 	render() {
 		return (
-			<Grid fluid className="p-none m-none">
+			<Grid fluid className='p-none m-none'>
 				<Section1 onClick={this.handleGenerateNewOrder} />
 				<WrapperContent style={{ padding: '6em 0' }}>
 					<Col xs={12}>
-						<Row center="xs" start="md" style={{ padding: '0 0 6em 0' }}>
+						<Row center='xs' start='md' style={{ padding: '0 0 6em 0' }}>
 							<Col xs={10} md={12}>
-								<p className="mdc-typography--headline5" style={{ margin: 4 }}>
+								<p className='mdc-typography--headline5' style={{ margin: 4 }}>
 									¿PORQUE ELEGIR DVOLADA?
 								</p>
-								<p className="mdc-typography--body1">
+								<p className='mdc-typography--body1'>
 									Descarga la app para conocer el catalogo de comercios
 								</p>
 							</Col>
@@ -122,22 +122,22 @@ export class HomePage extends Component {
 					<Col xs={12}>
 						<Row>
 							<BenefitsCard
-								title="Envíos rápidos"
-								description="Solo recogeran tu pedido los conductores que se encuentren cerca del comercio."
-								background="#e6ac99"
-								icon="fire"
+								title='Envíos rápidos'
+								description='Solo recogeran tu pedido los conductores que se encuentren cerca del comercio.'
+								background='#e6ac99'
+								icon='fire'
 							/>
 							<BenefitsCard
-								title="Ahorra tiempo"
-								description="Evita hacer filas, esperar en el trafico, sigue avanzando sin descuidar tu pedido. Monitoreo en tiempo real."
-								background="#9dbdf0"
-								icon="clock-circle"
+								title='Ahorra tiempo'
+								description='Evita hacer filas, esperar en el trafico, sigue avanzando sin descuidar tu pedido. Monitoreo en tiempo real.'
+								background='#9dbdf0'
+								icon='clock-circle'
 							/>
 							<BenefitsCard
-								title="Precios Justos"
-								description="Somos el servicio de entrega con los costos de envíos más accesibles del mercado"
-								background="#d8de8d"
-								icon="credit-card"
+								title='Precios Justos'
+								description='Somos el servicio de entrega con los costos de envíos más accesibles del mercado'
+								background='#d8de8d'
+								icon='credit-card'
 							/>
 						</Row>
 					</Col>
@@ -149,27 +149,26 @@ export class HomePage extends Component {
 								<Row>
 									<Col xs={12}>
 										<p
-											className="mdc-typography--headline5"
-											style={{ margin: 0, padding: '0 1em' }}
-										>
+											className='mdc-typography--headline5'
+											style={{ margin: 0, padding: '0 1em' }}>
 											Categorías
 										</p>
 									</Col>
 								</Row>
-								<Row end="xs">
+								<Row end='xs'>
 									<Col xs={12}>
 										<Button
-											type="primary"
-											shape="circle"
-											icon="arrow-left"
+											type='primary'
+											shape='circle'
+											icon='arrow-left'
 											size={'large'}
 											style={style.buttonGray}
 											onClick={this.handlePrev}
 										/>
 										<Button
-											type="primary"
-											shape="circle"
-											icon="arrow-right"
+											type='primary'
+											shape='circle'
+											icon='arrow-right'
 											size={'large'}
 											style={style.buttonGray}
 											onClick={this.handleNext}
@@ -179,8 +178,7 @@ export class HomePage extends Component {
 								<Carousel
 									ref={(slider) => (this.slider = slider)}
 									{...configCategories}
-									className="wrapper-carousel-categories"
-								>
+									className='wrapper-carousel-categories'>
 									{this.state.categories.map((item, key) => (
 										<ItemCategory
 											key={key}
@@ -195,25 +193,25 @@ export class HomePage extends Component {
 						</Row>
 					</Grid>
 				</Row>
-				<WrapperContent style={{ padding: '6em 0' }} center="xs" start="md">
+				<WrapperContent style={{ padding: '6em 0' }} center='xs' start='md'>
 					<Col xs={10} md={12}>
 						<Row>
 							<Col md={6}>
 								<Row>
 									<Col xs={12}>
-										<p className="mdc-typography--overline">SOLUCIONES EN MOVIMIENTO</p>
+										<p className='mdc-typography--overline'>SOLUCIONES EN MOVIMIENTO</p>
 									</Col>
 									<Col xs={12}>
-										<p className="mdc-typography--headline4">¿Qué es dVolada?</p>
+										<p className='mdc-typography--headline4'>¿Qué es dVolada?</p>
 									</Col>
 									<Col xs={12}>
-										<p className="mdc-typography--subtitle1">
-											dVolada es una app de entrega innovadora que te conecta con los mejores
-											establecimientos de la ciudad al recibir lo que necesitas en la puerta de tu
-											casa, causando una experiencia satisfactoria. <br />
-											dVolada ofrece diversos productos y servicios en cualquier momento. Busca lo
-											que requieres, solamente elige y listo, utilizando dVolada todo es más
-											fácil.
+										<p className='mdc-typography--subtitle1'>
+											dVolada es una app de entrega innovadora que te conecta con los
+											mejores establecimientos de la ciudad al recibir lo que necesitas en
+											la puerta de tu casa, causando una experiencia satisfactoria. <br />
+											dVolada ofrece diversos productos y servicios en cualquier momento.
+											Busca lo que requieres, solamente elige y listo, utilizando dVolada
+											todo es más fácil.
 										</p>
 									</Col>
 									{/* <Col xs={12}>
@@ -226,8 +224,8 @@ export class HomePage extends Component {
 									<Col xs={12}>
 										<img
 											src={DELIVERY_MAN}
-											alt="bg-driver"
-											className="img-fluid"
+											alt='bg-driver'
+											className='img-fluid'
 											style={{ borderRadius: 16, maxWidth: '480px' }}
 										/>
 									</Col>
@@ -239,38 +237,39 @@ export class HomePage extends Component {
 
 				<Row style={{ padding: '2em 0' }}>
 					<Grid>
-						<Row className="content-available-place bg-content-primary" center="xs" start="md">
+						<Row
+							className='content-available-place bg-content-primary'
+							center='xs'
+							start='md'>
 							<Col md={12}>
-								<Row middle="xs">
+								<Row middle='xs'>
 									<Col md={6}>
 										<Row>
 											<Col xs={12}>
-												<p className="mdc-typography--headline4 c-white">
+												<p className='mdc-typography--headline4 c-white'>
 													Disfruta una mejor experiencia descargando la app
 												</p>
 											</Col>
 											<Col xs={12}>
-												<Row center="xs" start="md">
+												<Row center='xs' start='md'>
 													<a
-														href="https://play.google.com/store/apps/details?id=mx.dvolada.cliente&hl=es_MX"
-														target="_blank"
-														rel="noopener noreferrer"
-													>
+														href='https://play.google.com/store/apps/details?id=mx.dvolada.cliente&hl=es_MX'
+														target='_blank'
+														rel='noopener noreferrer'>
 														<img
 															src={ANDROID_ICON}
-															alt="download-app"
+															alt='download-app'
 															style={{ maxWidth: 148 }}
 														/>
 													</a>
 													<a
-														href="https://apps.apple.com/id/app/dvolada/id1499224260"
-														target="_blank"
-														rel="noopener noreferrer"
-														style={{ padding: '0.6em' }}
-													>
+														href='https://apps.apple.com/id/app/dvolada/id1499224260'
+														target='_blank'
+														rel='noopener noreferrer'
+														style={{ padding: '0.6em' }}>
 														<img
 															src={IOS_ICON}
-															alt="download-app"
+															alt='download-app'
 															style={{ maxWidth: 148 }}
 														/>
 													</a>
@@ -279,7 +278,7 @@ export class HomePage extends Component {
 										</Row>
 									</Col>
 									<Col md={6}>
-										<img src={MOCKUP_MOBILE} alt="bg-phone" className="img-fluid" />
+										<img src={MOCKUP_MOBILE} alt='bg-phone' className='img-fluid' />
 									</Col>
 								</Row>
 							</Col>
@@ -296,24 +295,23 @@ export class HomePage extends Component {
 const BenefitsCard = (props) => {
 	return (
 		<Col md={4}>
-			<Row middle="xs" className="wrapper-benefits-card">
+			<Row middle='xs' className='wrapper-benefits-card'>
 				<Col xs={2} md={2}>
 					<Avatar size={54} icon={props.icon} style={{ background: props.background }} />
 				</Col>
 				<Col xs={10} md={10}>
-					<Row center="xs">
+					<Row center='xs'>
 						<Col xs={11}>
-							<Row start="xs">
+							<Row start='xs'>
 								<Col xs={12}>
 									<p
-										className="mdc-typography--headline6"
-										style={{ margin: '0 0 8px 0', fontWeight: 600 }}
-									>
+										className='mdc-typography--headline6'
+										style={{ margin: '0 0 8px 0', fontWeight: 600 }}>
 										{props.title}
 									</p>
 								</Col>
 								<Col xs={12}>
-									<p className="mdc-typography--subtitle2">{props.description}</p>
+									<p className='mdc-typography--subtitle2'>{props.description}</p>
 								</Col>
 							</Row>
 						</Col>
@@ -328,7 +326,9 @@ const WrapperContent = (props) => {
 	return (
 		<Row style={props.style}>
 			<Grid>
-				<Row start={props.start ? props.start : 'xs'} center={props.center ? props.center : null}>
+				<Row
+					start={props.start ? props.start : 'xs'}
+					center={props.center ? props.center : null}>
 					{props.children}
 				</Row>
 			</Grid>
@@ -338,13 +338,24 @@ const WrapperContent = (props) => {
 
 const ItemCategory = (props) => {
 	const style = {
-		coverCategory: { borderRadius: '16px', width: '148px', height: '148px', objectFit: 'cover', margin: 'auto' },
+		coverCategory: {
+			borderRadius: '16px',
+			width: '148px',
+			height: '148px',
+			objectFit: 'cover',
+			margin: 'auto',
+		},
 		padding1: { padding: '1em', cursor: 'pointer' },
 	};
 	return (
-		<Row center="xs" style={style.padding1} onClick={() => props.onClick(props._id)}>
-			<Col xs={12} className="p-none">
-				<img src={props.image} alt="category-image" className="img-fluid" style={style.coverCategory} />
+		<Row center='xs' style={style.padding1} onClick={() => props.onClick(props._id)}>
+			<Col xs={12} className='p-none'>
+				<img
+					src={props.image}
+					alt={props.title}
+					className='img-fluid'
+					style={style.coverCategory}
+				/>
 			</Col>
 			<p>{props.title}</p>
 		</Row>
@@ -353,28 +364,28 @@ const ItemCategory = (props) => {
 
 const Section1 = (props) => {
 	return (
-		<Row className="main-height">
+		<Row className='main-height'>
 			<Grid>
-				<Row middle="xs" className="h-100">
+				<Row middle='xs' className='h-100'>
 					<Col xs={12}>
-						<Row center="xs" start="md">
+						<Row center='xs' start='md'>
 							<Col xs={12}>
-								<Row center="xs" start="md">
+								<Row center='xs' start='md'>
 									<Col xs={10} md={12}>
-										<p className="mdc-typography--headline4 c-primary m-none">dVolada</p>
-										<p className="mdc-typography--headline5">
+										<p className='mdc-typography--headline4 c-primary m-none'>dVolada</p>
+										<p className='mdc-typography--headline5'>
 											La App donde tu única preocupación será...
 										</p>
-										<p className="mdc-typography--headline3">¿Ahora que voy a pedir?</p>
+										<p className='mdc-typography--headline3'>¿Ahora que voy a pedir?</p>
 									</Col>
 									<Col xs={10} md={12}>
-										<Row center="xs" start="md">
+										<Row center='xs' start='md'>
 											<a
-												type="button"
-												className="btn-primary color-primary"
+												type='button'
+												className='btn-primary color-primary'
 												href={'https://dvolada.lat/'}
-												target="_blank"
-											>
+												target='_blank'
+												rel='noopener noreferrer'>
 												Conocer más
 											</a>
 											{/* <p style={{ padding: 16, margin: 0 }} className="mdc-typography--subtitle1">
@@ -418,17 +429,18 @@ const AvailablePlaceOfService = (props) => {
 	return (
 		<Row style={{ padding: '6em 0' }}>
 			<Grid>
-				<Row className="content-available-place">
+				<Row className='content-available-place'>
 					<Col xs={12}>
-						<p className="mdc-typography--headline5">Tenemos servicio en estas ciudades</p>
+						<p className='mdc-typography--headline5'>
+							Tenemos servicio en estas ciudades
+						</p>
 					</Col>
 					<Col xs={12}>
 						{placeOfService.map((item) => (
 							<Tag
 								key={item}
-								className="wrapper-tag--places"
-								onClick={() => props.onClick(item.toLowerCase())}
-							>
+								className='wrapper-tag--places'
+								onClick={() => props.onClick(item.toLowerCase())}>
 								{item}
 							</Tag>
 						))}
@@ -447,19 +459,19 @@ const Footer = (props) => {
 	return (
 		<Row style={style.paddingTopFooter}>
 			<Grid>
-				<Row center="xs" start="md">
+				<Row center='xs' start='md'>
 					<Col xs={10} md={12}>
 						<Row>
 							<Col md={8}>
-								<Row start="xs">
+								<Row start='xs'>
 									<ColumnItemListGrid />
 								</Row>
 							</Col>
-							<Col md={4} className="padding-logo-footer--mobile">
-								<Logo maxWidth={'260px'} end="md" center="xs" className="logotipo" />
+							<Col md={4} className='padding-logo-footer--mobile'>
+								<Logo maxWidth={'260px'} end='md' center='xs' className='logotipo' />
 							</Col>
 						</Row>
-						<Row style={style.paddingTopFooter} className="padding-footer-mobile--legal">
+						<Row style={style.paddingTopFooter} className='padding-footer-mobile--legal'>
 							<Col md={6}>
 								<Row>
 									<Col xs={12}>
@@ -468,21 +480,21 @@ const Footer = (props) => {
 								</Row>
 							</Col>
 							<Col md={6}>
-								<Row end="md">
+								<Row end='md'>
 									<Col md={6}>
 										<a
-											href="https://dvolada.firebaseapp.com/aviso-de-privacidad"
-											target="_blank"
-											className="item-footer--list"
-										>
+											href='https://dvolada.firebaseapp.com/aviso-de-privacidad'
+											target='_blank'
+											rel='noopener noreferrer'
+											className='item-footer--list'>
 											Politicas de privacidad
 										</a>
 									</Col>
 									<Col md={6}>
 										<a
-											href="https://dvolada.firebaseapp.com/terminos-y-condiciones"
-											target="_blank"
-										>
+											href='https://dvolada.firebaseapp.com/terminos-y-condiciones'
+											target='_blank'
+											rel='noopener noreferrer'>
 											Términos y condiciones
 										</a>
 									</Col>
@@ -502,8 +514,16 @@ const ColumnItemListGrid = () => {
 			title: 'DVOLADA',
 			items: [
 				{ label: 'Soy Aliado', href: 'http://aliado.dvolada.com.mx/', target: true },
-				{ label: 'Beneficios', href: 'http://aliado.dvolada.com.mx/#proceso', target: true },
-				{ label: 'Membresia', href: 'http://aliado.dvolada.com.mx/#membresia', target: true },
+				{
+					label: 'Beneficios',
+					href: 'http://aliado.dvolada.com.mx/#proceso',
+					target: true,
+				},
+				{
+					label: 'Membresia',
+					href: 'http://aliado.dvolada.com.mx/#membresia',
+					target: true,
+				},
 			],
 		},
 		{
@@ -518,21 +538,35 @@ const ColumnItemListGrid = () => {
 			title: 'REDES SOCIALES',
 			items: [
 				{ label: 'Facebook', href: 'https://www.facebook.com/dVolada.Mx', target: true },
-				{ label: 'Instagram', href: 'https://www.instagram.com/dvolada_oficial', target: true },
-				{ label: 'Linkedin', href: 'https://www.linkedin.com/company/dvolada-oficial', target: true },
+				{
+					label: 'Instagram',
+					href: 'https://www.instagram.com/dvolada_oficial',
+					target: true,
+				},
+				{
+					label: 'Linkedin',
+					href: 'https://www.linkedin.com/company/dvolada-oficial',
+					target: true,
+				},
 			],
 		},
 		{
 			title: 'CONTACTO',
 			items: [
-				{ label: 'hola@dvolada.com.mx', href: 'mailto:hola@dvolada.com.mx', target: true },
+				{
+					label: 'hola@dvolada.com.mx',
+					href: 'mailto:hola@dvolada.com.mx',
+					target: true,
+				},
 				{ label: 'Número de contacto', href: 'tel:+522215634029', target: true },
 				{ label: 'Oficinas', href: '#' },
 			],
 		},
 	];
 
-	return data.map((element, key) => <ColumnItemList title={element.title} items={element.items} key={key} />);
+	return data.map((element, key) => (
+		<ColumnItemList title={element.title} items={element.items} key={key} />
+	));
 };
 
 const ColumnItemList = (props) => {
@@ -544,12 +578,16 @@ const ColumnItemList = (props) => {
 	return (
 		<Col md={3}>
 			<Row>
-				<p className="mdc-typography--subtitle2">{props.title}</p>
+				<p className='mdc-typography--subtitle2'>{props.title}</p>
 			</Row>
 			<ul style={style.formatUl}>
 				{props.items.map((item, key) => (
 					<li key={key} style={style.spaceItemDown}>
-						<a href={item.href} target={item.target ? '_blank' : ''} className="item-footer--list">
+						<a
+							href={item.href}
+							target={item.target ? '_blank' : ''}
+							className='item-footer--list'
+							rel='noopener noreferrer'>
 							{item.label}
 						</a>
 					</li>
