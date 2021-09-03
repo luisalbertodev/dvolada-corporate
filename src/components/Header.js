@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Button, Drawer, Icon } from 'antd';
-import { DEALER, COMMERCE, START_DVOLADA, ACTIVE_CLASSNAME } from '../data/ConstanstNavbar';
+import {
+	DEALER,
+	COMMERCE,
+	START_DVOLADA,
+	ACTIVE_CLASSNAME,
+} from '../data/ConstanstNavbar';
 import { PRIMARY_COLOR } from '../data/ConstansStyles';
 
 import { Logo } from './Logo';
@@ -74,33 +79,32 @@ export const Header = () => {
 
 	return (
 		<WrapperContent showDrawer={showDrawer} onClose={onClose} visible={isShowDrawer}>
-			<Row style={style.paddingNavbar} middle="xs" className="p-none--mobile">
+			<Row style={style.paddingNavbar} middle='xs' className='p-none--mobile'>
 				<Col md={6}>
 					<Logo />
 				</Col>
 				<Col md={6}>
-					<Row middle="xs" end="xs" className="menu--drawer">
+					<Row middle='xs' end='xs' className='menu--drawer'>
 						<NavLink
 							to={DEALER}
 							activeClassName={ACTIVE_CLASSNAME}
 							style={style.linkFormat}
 							activeStyle={style.isActiveLink}
-							className="mdc-typography--subtitle1"
-						>
+							className='mdc-typography--subtitle1'>
 							Repartidor
 						</NavLink>
 						<a
 							href={COMMERCE}
-							target="_blank"
+							target='_blank'
 							activeClassName={ACTIVE_CLASSNAME}
 							style={style.linkFormat}
 							activeStyle={style.isActiveLink}
-							className="mdc-typography--subtitle1"
-						>
+							className='mdc-typography--subtitle1'
+							rel='noopener noreferrer'>
 							Comercio
 						</a>
 
-						<Button type="primary" onClick={handleReedirect} style={style.buttonPrimary}>
+						<Button type='primary' onClick={handleReedirect} style={style.buttonPrimary}>
 							ENTRAR
 						</Button>
 					</Row>
@@ -111,21 +115,21 @@ export const Header = () => {
 };
 
 const DrawerWrapper = (props) => (
-	<nav className="menuBar">
+	<nav className='menuBar'>
 		<Col xs={12}>
 			<Row>
 				<Col xs={6}>
-					<Row start="xs" middle="xs">
+					<Row start='xs' middle='xs'>
 						<Col xs={12}>
 							<Logo />
 						</Col>
 					</Row>
 				</Col>
 				<Col xs={6}>
-					<Row end="xs">
+					<Row end='xs'>
 						<Col xs={12}>
-							<Button type="primary" onClick={props.showDrawer} style={{ margin: 0 }}>
-								<Icon type="menu-fold" style={{ color: 'white' }} />
+							<Button type='primary' onClick={props.showDrawer} style={{ margin: 0 }}>
+								<Icon type='menu-fold' style={{ color: 'white' }} />
 							</Button>
 						</Col>
 					</Row>
@@ -133,13 +137,12 @@ const DrawerWrapper = (props) => (
 			</Row>
 		</Col>
 		<Drawer
-			title="Menú"
-			placement="right"
+			title='Menú'
+			placement='right'
 			closable={false}
 			onClose={props.onClose}
 			visible={props.visible}
-			closable
-		>
+			closable>
 			{props.children}
 		</Drawer>
 	</nav>
